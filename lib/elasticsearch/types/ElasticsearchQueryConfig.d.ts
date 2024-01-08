@@ -39,6 +39,7 @@ export default interface ElasticsearchQueryConfig {
             minPrice: boolean;
             maxCostPrice: boolean;
             minCostPrice: boolean;
+            hasOfferForGroups: boolean;
         };
     };
 }

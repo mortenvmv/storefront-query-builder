@@ -338,6 +338,9 @@ export default class RequestBody {
               if (this.config.products.aggregate.minCostPrice) {
                 this.queryChain.aggregation('min', 'cost_price')
               }
+              if (this.config.products.aggregate.hasOfferForGroups) {
+                this.queryChain.aggregation('terms', 'hasOfferForGroups')
+              }
             }
           }
         }
